@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>좋아하는 계절</legend>
+      <h3>[1] 봄 [2] 여름 [3] 가을 [4] 겨울</h3>
+      <input type="text" id="season" />
+      <input type="button" value="click" onclick="season()" />
+      <h1 id="result">좋아하는 계절 출력</h1>
+    </fieldset>
+  </body>
+  <script>
+    function season() {
+      let likeSeason = document.getElementById("season").value;
+      if (likeSeason == 1) {
+        document.getElementById("result").innerHTML =
+          " 좋아하는 계절은 봄입니다";
+      } else if (likeSeason == 2) {
+        document.getElementById("result").innerHTML =
+          " 좋아하는 계절은 여름입니다";
+      } else if (likeSeason == 3) {
+        document.getElementById("result").innerHTML =
+          " 좋아하는 계절은 가을입니다";
+      } else if (likeSeason == 4) {
+        document.getElementById("result").innerHTML =
+          " 좋아하는 계절은 겨울입니다";
+      } else {
+        document.getElementById("result").innerHTML =
+          " 1~4까지만 입력해 주세요";
+      }
+    }
+  </script>
+</html>
+```
