@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>계산기</h1>
+        nunber1: <input type="number" id="id1" name="id1" /> <br />
+        nunber1: <input type="number" id="id2" name="id2" /> <br />
+        계산결과: <input type="text" id="id3" name="id3" /> <br />
+        <input type="button" value="계산" onclick="fun1()" />
+    </body>
+    <script>
+        const fun1 = () => {
+            const num1 = document.getElementById('id1').value;
+            const num2 = document.getElementById('id2').value;
+            const avg = Number(num1) + Number(num2);
+
+            document.getElementById('id3').value = grade;
+        };
+    </script>
+</html>
