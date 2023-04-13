@@ -5,6 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <script
+            src="https://code.jquery.com/jquery-3.6.4.min.js"
+            integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+            crossorigin="anonymous"
+        ></script>
     </head>
     <body>
         <h2><span>안녕하세요</span></h2>
@@ -18,13 +23,17 @@
         console.log(document);
         // 현재 문서에 있는 모든 h2 요소 출력
         console.log(document.getElementsByTagName('h2'));
-        const h2ALL = document.getElementsByTagName('h2');
+        // jq
+        console.log('jq h2요소 가져오기', $('h2'));
+        // const h2ALL = document.getElementsByTagName('h2');
+        const h2ALL = $('h2');
         console.log(h2ALL);
         console.log(h2ALL.length);
         console.log(h2ALL[0]);
         // 첫번째h2 태그의 innerHTML 속성값 출력
         console.log(h2ALL[0].innerHTML);
         console.log(h2ALL[0].innerText);
+
         // 반복문을 활용하여 h2요소들의 innerText 출력
         for (let i = 0; i < h2ALL.length; i++) {
             console.log(h2ALL[i].innerText);
